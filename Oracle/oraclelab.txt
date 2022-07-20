@@ -1,0 +1,93 @@
+if sqlplus
+	user name scott/lion@orci
+	
+	host IP for oracle server
+	192.168.200.3
+	192.168.222.1 
+	global name for 1 -> orcl.gujaratvidyapith.org
+	orcl 
+	
+	Protocol -> TCP
+	
+	Host Name -> 192.168.200.3
+	Port -> 1521
+	
+	Yes,Perform a test
+	
+	Change Login
+	username scott
+	pass lion
+	
+	Net Service Name : orcl
+					   test
+					   
+	Finish
+	
+	host string name : test
+	
+	?TNS protocol adapter error
+	TNS - Listener
+	
+	To connect with oracle:-
+	cmd -> sqlplus
+	username/pass@host string
+	scott/lion@orcl
+	
+	select * from tab;
+	
+	desc emp; -> Description about table
+	
+	select * from emp;
+	
+	To enable display output when using Anonymous block/Procedures.
+	set serveroutput on;
+	
+	Anonymous block
+	
+	declare 
+		name varchar(50);
+	begin 
+		select ename into name from emp where empno = 7902;
+		dbms_output.put_line('Name of the employee is ' || name);
+	end;	
+	/
+	
+	O/P : - Name of the employee is FORD
+	
+	To display data
+	dbms_output.put();
+	dbms_output.put_line();
+	
+	declare
+	begin
+	exception
+	end
+	
+	?cursor
+	
+	PL/SQL is the version provided by oracle but it is not oracle or sql
+	
+	?into clause
+
+	
+	
+	
+	
+	
+	Oracle date format
+	DD-MON-YYYY
+	01-JAN-2000
+	
+	?conceptual schema
+	conceptual schema->Main Memory->Scondary Storage(Internal Schema)
+	
+	homework -> diff between table and view
+	
+	?Meta Character *,?,\
+	?Metadata
+	
+	Homework : Table creaton , Dummy Data, Report ex : student report or employee report
+	
+	
+	
+	
