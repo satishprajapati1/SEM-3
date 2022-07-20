@@ -1,0 +1,16 @@
+create table patient(
+	pid NUMBER(3),
+	name varchar(20),
+	age NUMBER(2),
+	contact NUMBER(10),
+	address varchar(50)
+)
+TABLESPACE stud 
+STORAGE(INITIAL 10M
+		NEXT 5M
+		MINEXTENTS 1
+		MAXEXTENTS 5
+		);
+
+INSERT INTO patient values (1,'Harsh',22,9876898765,'Ahmedabad');
+INSERT INTO patient(pid,name,age,contact,address) values (2,'Shrushti',23,9856898764,'Ahmedabad');
